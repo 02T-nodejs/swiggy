@@ -7,7 +7,7 @@ export class UserController {
       },
     ];
     console.log("123");
-    return res.status(200).send(data);
+    return res.status(200).send(req.body);
   }
   static test1(req, res, next) {
     (req as any).msg = "This is msg";
